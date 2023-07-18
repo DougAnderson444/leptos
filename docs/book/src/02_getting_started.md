@@ -42,6 +42,18 @@ cargo add leptos --features=csr
 >
 > If you’d rather use stable Rust with Leptos, you can do that too. In the guide and examples, you’ll just use the [`ReadSignal::get()`](https://docs.rs/leptos/latest/leptos/struct.ReadSignal.html#impl-SignalGet%3CT%3E-for-ReadSignal%3CT%3E) and [`WriteSignal::set()`](https://docs.rs/leptos/latest/leptos/struct.WriteSignal.html#impl-SignalGet%3CT%3E-for-ReadSignal%3CT%3E) methods instead of calling signal getters and setters as functions.
 
+Ensure you have the most up to date nightly:
+
+```bash
+rustup update nightly
+```
+
+and cargo:
+
+```bash
+cargo update
+```
+
 Make sure you've added the `wasm32-unknown-unknown` target so that Rust can compile your code to WebAssembly to run in the browser.
 
 ```bash
